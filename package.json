@@ -31,6 +31,7 @@
 		"webpack-stream": "^6.1.2"
 	},
 	"dependencies": {
+		"particles.js": "^2.0.0",
 		"swiper": "^6.7.5"
 	}
 }

@@ -1,0 +1,120 @@
+.hero_wrapper {
+  min-height: 100%;
+  height: calc(100vh - 101px);
+}
+
+
+.hero_text-container {
+  position: absolute;
+  top: 22%;
+  left: 420px;
+
+  .hero_text {
+    .hero_text-title {
+      font-weight: bold;
+      font-size: 36px;
+      line-height: 46px;
+      color: #000000;
+      max-width: 755px;
+      margin: 0 0 50px 0;
+    }
+
+    .hero_text-desc {
+      font-size: 28px;
+      line-height: 150%;
+      color: #000000;
+      max-width: 755px;
+      margin: 0;
+    }
+
+    .text-blue {
+      color: #2D9CDB;
+    }
+  }
+
+
+  .hero_video {
+    margin-left: 50px;
+    max-width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .video {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      background-image: url("../images/dist/hero_video.png");
+      background-position: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      position: absolute;
+      z-index: 1;
+    }
+    &:after{
+      content: '';
+      position: relative;
+      left: 4px;
+      top: -2px;
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      border: 5px solid #56CCF2;
+
+    }
+  }
+}
+
+canvas {
+  display: block;
+  vertical-align: bottom;
+}
+
+/* ---- particles.js container ---- */
+
+#particles-js {
+  width: 100%;
+  height: calc(100vh - 101px);
+  background-color: antiquewhite;
+  background-image: url("https://images.unsplash.com/photo-1573165231977-3f0e27806045?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1050&q=80");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+/* ---- stats.js ---- */
+//
+//.count-particles {
+//  background: #000022;
+//  position: absolute;
+//  top: 50px;
+//  left: 0;
+//  width: 80px;
+//  color: #13E8E9;
+//  font-size: .8em;
+//  text-align: left;
+//  text-indent: 4px;
+//  line-height: 14px;
+//  padding-bottom: 2px;
+//  font-weight: bold;
+//}
+//
+//.js-count-particles {
+//  font-size: 1.1em;
+//}
+//
+//#stats,
+//.count-particles {
+//  -webkit-user-select: none;
+//}
+//
+//#stats {
+//  border-radius: 3px 3px 0 0;
+//  overflow: hidden;
+//}
+//
+//.count-particles {
+//  border-radius: 0 0 3px 3px;
+//}

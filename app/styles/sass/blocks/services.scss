@@ -1,0 +1,57 @@
+.services {
+  background: #162025;
+
+  .services_title {
+    .title_block {
+      padding-bottom: 120px;
+    }
+  }
+
+  .swiper_slider {
+    padding-bottom: 65px;
+    position: relative;
+
+    .swiper-container {
+      .swiper-wrapper {
+        .swiper-slide {
+          .services_slider {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+
+            .title {
+              font-weight: bold;
+              font-size: 22px;
+              line-height: 30px;
+              color: #FCFCFC;
+              margin: 40px 0 0 0;
+            }
+
+            .desc {
+              font-size: 18px;
+              line-height: 25px;
+              color: #FCFCFC;
+              margin: 20px 0 0 0;
+            }
+          }
+        }
+      }
+    }
+
+    .swiper-btn {
+      position: absolute;
+      top: 40%;
+      border: none;
+      background: transparent;
+    }
+
+    .swiper-prev {
+      left: -60px;
+    }
+
+    .swiper-next {
+      right: -60px;
+    }
+  }
+}
