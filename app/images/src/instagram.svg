@@ -1,0 +1,53 @@
+<svg width="85" height="81" viewBox="0 0 85 81" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g clip-path="url(#clip0)">
+<rect y="-1.44629" width="84.9128" height="84.5293" fill="url(#pattern0)"/>
+<path d="M24.0979 74.2522C15.6197 74.2522 8.71796 67.3817 8.71796 58.9418V22.5424C8.71796 14.1025 15.6197 7.23193 24.0979 7.23193H60.6624C69.1406 7.23193 76.0423 14.1025 76.0423 22.5424V58.9418C76.0423 67.3817 69.1406 74.2522 60.6624 74.2522H24.0979Z" fill="url(#paint0_linear)"/>
+<path d="M60.6624 67.4683H24.0978C19.3611 67.4683 15.5252 63.6497 15.5252 58.9344V22.6652C15.5252 17.8847 19.4192 14.0083 24.2213 14.0083H60.6551C65.3919 14.0083 69.2278 17.8269 69.2278 22.5422V58.9416C69.235 63.6497 65.3991 67.4683 60.6624 67.4683Z" fill="url(#paint1_linear)"/>
+<path d="M49.9976 31.7959C49.0769 31.7959 48.3404 32.5371 48.3404 33.4457C48.3404 34.3622 49.085 35.0954 49.9976 35.0954C50.9183 35.0954 51.6549 34.3542 51.6549 33.4457C51.6629 32.5371 50.9183 31.7959 49.9976 31.7959Z" fill="url(#paint2_linear)"/>
+<path d="M42.6161 33.916C38.7732 33.916 35.6428 37.0322 35.6428 40.8578C35.6428 44.6833 38.7732 47.7995 42.6161 47.7995C46.459 47.7995 49.5893 44.6833 49.5893 40.8578C49.5893 37.0322 46.459 33.916 42.6161 33.916ZM42.6161 45.3129C40.1502 45.3129 38.1487 43.3205 38.1487 40.8657C38.1487 38.411 40.1502 36.4186 42.6161 36.4186C45.0819 36.4186 47.0834 38.411 47.0834 40.8657C47.0834 43.3125 45.0819 45.3129 42.6161 45.3129Z" fill="url(#paint3_linear)"/>
+<path d="M48.1562 54.9646H36.8437C32.1522 54.9646 28.3333 51.163 28.3333 46.4927V35.2312C28.3333 30.5609 32.1522 26.7593 36.8437 26.7593H48.1562C52.8478 26.7593 56.6666 30.5609 56.6666 35.2312V46.4927C56.6586 51.163 52.8478 54.9646 48.1562 54.9646ZM36.8437 29.4132C33.6253 29.4132 30.9993 32.0194 30.9993 35.2312V46.4927C30.9993 49.6965 33.6173 52.3107 36.8437 52.3107H48.1562C51.3827 52.3107 54.0006 49.7045 54.0006 46.4927V35.2312C54.0006 32.0274 51.3827 29.4132 48.1562 29.4132H36.8437Z" fill="url(#paint4_linear)"/>
+</g>
+<defs>
+<pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+<use xlink:href="#image0"/>
+</pattern>
+<linearGradient id="paint0_linear" x1="55.2098" y1="71.4567" x2="31.1852" y2="13.4136" gradientUnits="userSpaceOnUse">
+<stop stop-color="#EEF2F5"/>
+<stop offset="0.5056" stop-color="#FAFBFC"/>
+<stop offset="1" stop-color="white"/>
+</linearGradient>
+<linearGradient id="paint1_linear" x1="36.5051" y1="11.8324" x2="47.6818" y2="67.3295" gradientUnits="userSpaceOnUse">
+<stop stop-color="#EEF2F5"/>
+<stop offset="0.3995" stop-color="#F7F9FA"/>
+<stop offset="1" stop-color="white"/>
+</linearGradient>
+<linearGradient id="paint2_linear" x1="37.0218" y1="21.0857" x2="62.6005" y2="45.6798" gradientUnits="userSpaceOnUse">
+<stop offset="0.0011048" stop-color="#FBE18A"/>
+<stop offset="0.2094" stop-color="#FCBB45"/>
+<stop offset="0.3765" stop-color="#F75274"/>
+<stop offset="0.5238" stop-color="#D53692"/>
+<stop offset="0.7394" stop-color="#8F39CE"/>
+<stop offset="1" stop-color="#5B4FE9"/>
+</linearGradient>
+<linearGradient id="paint3_linear" x1="29.773" y1="28.6249" x2="55.3515" y2="53.219" gradientUnits="userSpaceOnUse">
+<stop offset="0.0011048" stop-color="#FBE18A"/>
+<stop offset="0.2094" stop-color="#FCBB45"/>
+<stop offset="0.3765" stop-color="#F75274"/>
+<stop offset="0.5238" stop-color="#D53692"/>
+<stop offset="0.7394" stop-color="#8F39CE"/>
+<stop offset="1" stop-color="#5B4FE9"/>
+</linearGradient>
+<linearGradient id="paint4_linear" x1="29.7173" y1="28.683" x2="55.2957" y2="53.2769" gradientUnits="userSpaceOnUse">
+<stop offset="0.0011048" stop-color="#FBE18A"/>
+<stop offset="0.2094" stop-color="#FCBB45"/>
+<stop offset="0.3765" stop-color="#F75274"/>
+<stop offset="0.5238" stop-color="#D53692"/>
+<stop offset="0.7394" stop-color="#8F39CE"/>
+<stop offset="1" stop-color="#5B4FE9"/>
+</linearGradient>
+<clipPath id="clip0">
+<rect width="85" height="81" fill="white"/>
+</clipPath>
+<image id="image0" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAewAAAHsCAYAAAAQKp5gAAAACXBIWXMAAC4jAAAuIwF4pT92AAAA"/>
+</defs>
+</svg>

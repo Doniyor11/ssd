@@ -1,12 +1,12 @@
 .hero_wrapper {
   min-height: 100%;
-  height: calc(100vh - 101px);
+  height: 100vh;
 }
 
 
 .hero_text-container {
   position: absolute;
-  top: 22%;
+  top: 40vh !important;
   left: 420px;
 
   .hero_text {
@@ -76,7 +76,7 @@ canvas {
 
 #particles-js {
   width: 100%;
-  height: calc(100vh - 101px);
+  height: 100vh;
   background-color: antiquewhite;
   background-image: url("https://images.unsplash.com/photo-1573165231977-3f0e27806045?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1050&q=80");
   background-repeat: no-repeat;

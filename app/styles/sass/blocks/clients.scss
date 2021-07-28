@@ -1,0 +1,33 @@
+.clients {
+  background: #2D363B;
+  padding-bottom: 225px;
+
+  .title_block {
+    padding-bottom: 195px;
+  }
+
+  .clients_slider {
+    position: relative;
+
+    .swiper-slide{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .swiper-btn {
+      position: absolute;
+      top: 15%;
+      border: none;
+      background: transparent;
+    }
+
+    .clients-swiper-prev {
+      left: -60px;
+    }
+
+    .clients-swiper-next {
+      right: -60px;
+    }
+  }
+}
