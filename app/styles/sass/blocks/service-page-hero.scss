@@ -1,0 +1,126 @@
+.services-page-swiper{
+  padding-top: 200px;
+
+  .s-swiper {
+    padding: 0 0 50px 0;
+
+
+    /*move swiper pagination on top to image */
+    .swiper-pagination {
+      display: flex;
+      justify-content: center;
+    }
+
+    .swiper-pagination-bullet {
+      background: #C4C4C4;
+      display: inline-block;
+      border-radius: 50%;
+      width: 14px;
+      height: 14px;
+
+
+      &:not(:last-child) {
+        margin-right: 15px;
+      }
+    }
+
+    /* change color of next 2 bullets in sequence to white*/
+
+    .swiper-pagination-bullet-active-next, .swiper-pagination-bullet-active-next-next {
+      background-color: #C4C4C4;
+    }
+
+    /* change color of previous bullet to white*/
+
+    .swiper-pagination-bullet-active {
+      background: #56CCF2 !important;
+    }
+  }
+
+  .swiper-wrapper {
+
+    .swiper-slide {
+      .services-page-slider {
+        display: flex;
+        justify-content: space-between;
+
+        .boxes {
+          width: 50%;
+        }
+
+        .img-block{
+          width: 445px;
+          height: 445px;
+          border-radius: 50%;
+          overflow: hidden;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+
+        .text-block {
+          padding: 30px 0 0 30px;
+
+          h2 {
+            font-weight: bold;
+            font-size: 30px;
+            line-height: 41px;
+            color: #000000;
+            margin: 0 0 40px 0;
+            max-width: 560px;
+          }
+
+          .text-blue{
+            color: #56CCF2;
+          }
+
+          p {
+            font-size: 25px;
+            line-height: 34px;
+            max-width: 600px;
+            color: #000000;
+            margin: 0;
+          }
+
+          .info-link {
+            display: flex;
+
+            a {
+              display: inline-block;
+              background: rgba(45, 156, 219, 0.7);
+              border-radius: 15px;
+              padding: 20px 55px;
+              font-weight: bold;
+              font-size: 20px;
+              line-height: 27px;
+              color: #FFFFFF;
+              margin-top: 100px;
+              transition: all .3s ease-in-out;
+              &:hover {
+                background-color: #000000;
+              }
+
+              &:not(:last-child) {
+                margin-right: 20px;
+              }
+            }
+          }
+
+
+          .text-block-two-title {
+            max-width: 620px;
+            margin-bottom: 60px;
+          }
+
+          .text-block-two-desc {
+            max-width: 640px;
+          }
+          .info-link-btn{
+            margin-top: 60px !important;
+          }
+        }
+      }
+    }
+  }
+
+}

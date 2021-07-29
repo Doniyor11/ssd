@@ -1,0 +1,116 @@
+.portfolio-page-hero {
+  padding-top: 100px;
+
+  .p-swiper {
+    padding: 165px 0 50px 0;
+
+
+    /*move swiper pagination on top to image */
+    .swiper-pagination {
+      display: flex;
+      justify-content: center;
+    }
+
+    .swiper-pagination-bullet {
+      background: #C4C4C4;
+      display: inline-block;
+      border-radius: 50%;
+      width: 14px;
+      height: 14px;
+
+
+      &:not(:last-child) {
+        margin-right: 15px;
+      }
+    }
+
+    /* change color of next 2 bullets in sequence to white*/
+
+    .swiper-pagination-bullet-active-next, .swiper-pagination-bullet-active-next-next {
+      background-color: #C4C4C4;
+    }
+
+    /* change color of previous bullet to white*/
+
+    .swiper-pagination-bullet-active {
+      background: #56CCF2 !important;
+    }
+  }
+
+  .swiper-wrapper {
+
+    .swiper-slide {
+      .portfolio-page-slider {
+        display: flex;
+        justify-content: space-between;
+
+        .boxes {
+          width: 50%;
+        }
+
+        .text-block {
+          padding: 30px 0 0 30px;
+
+          h2 {
+            font-weight: bold;
+            font-size: 30px;
+            line-height: 41px;
+            color: #56CCF2;
+            margin: 0 0 35px 0;
+            max-width: 530px;
+          }
+
+          p {
+            font-size: 25px;
+            line-height: 34px;
+            max-width: 530px;
+            color: #000000;
+            margin: 0;
+          }
+
+          .info-link {
+            display: flex;
+
+            a {
+              display: inline-block;
+              background: #2D363B;
+              border-radius: 15px;
+              padding: 20px 55px 20px 30px;
+              font-weight: bold;
+              font-size: 20px;
+              line-height: 27px;
+              color: #FFFFFF;
+              margin-top: 100px;
+              transition: all .3s ease-in-out;
+
+              img {
+                margin-right: 20px;
+              }
+
+              &:hover {
+                background-color: #56CCF2;
+              }
+
+              &:not(:last-child) {
+                margin-right: 20px;
+              }
+            }
+          }
+
+
+          .text-block-two-title {
+            max-width: 620px;
+            margin-bottom: 60px;
+          }
+
+          .text-block-two-desc {
+            max-width: 640px;
+          }
+          .info-link-btn{
+            margin-top: 60px !important;
+          }
+        }
+      }
+    }
+  }
+}
