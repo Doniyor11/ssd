@@ -1,0 +1,58 @@
+.career-tabs-body {
+  margin-top: 40px;
+
+  .career-search {
+    display: flex;
+    align-items: center;
+    border-radius: 15px;
+
+    .input-text {
+      padding: 20px 60px;
+      background: #2D363B;
+      border-radius: 15px 0 0 15px;
+
+      p {
+        font-weight: 600;
+        font-size: 25px;
+        line-height: 34px;
+        color: #FCFCFC;
+        margin: 0;
+      }
+    }
+
+    .input-row {
+      flex: 1;
+      padding: 20px 60px;
+      background: #FCFCFC;
+      border-top: 3px solid #D3D3D3;
+      border-right: 3px solid #D3D3D3;
+      border-bottom: 3px solid #D3D3D3;
+      border-radius: 0 15px 15px 0;
+      display: flex;
+      align-items: center;
+
+      input {
+        width: 100%;
+        border: none;
+        font-size: 20px;
+        line-height: 27px;
+        color: #999999;
+
+        &::placeholder {
+          font-size: 20px;
+          line-height: 27px;
+          color: #999999;
+        }
+      }
+
+      img {
+        margin: 0 0 0 5px;
+      }
+    }
+  }
+
+  .tab-content{
+    margin: 90px 0 140px 0;
+  }
+
+}
