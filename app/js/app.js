@@ -59,6 +59,9 @@ document.addEventListener('DOMContentLoaded', () => {
         slidesPerView: 3,
         spaceBetween: 100,
         loop: true,
+        mousewheel: {
+            invert: false,
+        },
         navigation: {
             nextEl: ".swiper-next",
             prevEl: ".swiper-prev",
@@ -74,6 +77,9 @@ document.addEventListener('DOMContentLoaded', () => {
         touchRatio: 1,
         touchAngle: 45,
         grabCursor: true,
+        mousewheel: {
+            invert: false,
+        },
         pagination: {
             el: ".swiper-pagination",
             clickable: true,
@@ -140,6 +146,26 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 })
+window.onload = function () {
+    Particles.init({
+        selector: ".background"
+    });
+};
+var particles = Particles.init({
+    selector: ".background",
+    color: ["#03dac6", "#ff0266", "#000000"],
+    connectParticles: true,
+    responsive: [
+        {
+            breakpoint: 768,
+            options: {
+                color: ["#faebd7", "#03dac6", "#ff0266"],
+                maxParticles: 43,
+                connectParticles: false
+            }
+        }
+    ]
+});
 
 
 /* ---- particles.js config ---- */
