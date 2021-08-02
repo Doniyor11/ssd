@@ -59,13 +59,31 @@ document.addEventListener('DOMContentLoaded', () => {
         slidesPerView: 3,
         spaceBetween: 100,
         loop: true,
-        mousewheel: {
-            invert: false,
-        },
         navigation: {
             nextEl: ".swiper-next",
             prevEl: ".swiper-prev",
         },
+        breakpoints: {
+            // when window width is >= 320px
+            1400: {
+                slidesPerView: 3,
+                spaceBetween: 80,
+            },
+            1201: {
+                slidesPerView: 3,
+                spaceBetween: 80,
+            },
+            // when window width is >= 480px
+            992: {
+                slidesPerView: 3,
+                spaceBetween: 50,
+            },
+            // when window width is >= 640px
+            768: {
+                slidesPerView: 2,
+                spaceBetween: 40,
+            }
+        }
     });
 
     const swiper2 = new Swiper('.reviews-swiper', {
@@ -77,9 +95,6 @@ document.addEventListener('DOMContentLoaded', () => {
         touchRatio: 1,
         touchAngle: 45,
         grabCursor: true,
-        mousewheel: {
-            invert: false,
-        },
         pagination: {
             el: ".swiper-pagination",
             clickable: true,
@@ -87,6 +102,16 @@ document.addEventListener('DOMContentLoaded', () => {
         autoplay: {
             delay: 5000,
         },
+        breakpoints: {
+            // when window width is >= 480px
+            992: {
+                slidesPerView: 2,
+                spaceBetween: 40,
+            },
+            768: {
+                slidesPerView: 1,
+            },
+        }
     });
 
     const swiper3 = new Swiper('.clients-swiper ', {
@@ -105,6 +130,18 @@ document.addEventListener('DOMContentLoaded', () => {
             nextEl: ".clients-swiper-next",
             prevEl: ".clients-swiper-prev",
         },
+        breakpoints: {
+            // when window width is >= 480px
+            992: {
+                slidesPerView: 3,
+                spaceBetween: 60,
+            },
+            // when window width is >= 640px
+            768: {
+                slidesPerView: 3,
+                spaceBetween: 50,
+            }
+        }
     });
 
     const swiper4 = new Swiper('.p-swiper ', {
@@ -143,143 +180,129 @@ document.addEventListener('DOMContentLoaded', () => {
             clickable: true,
         },
     });
-
-
-})
-window.onload = function () {
-    Particles.init({
-        selector: ".background"
+    //mobile menu
+    $('.menu_burger').click(function () {
+        $(".mobile_menu-wrap").toggleClass("mobile_menu-active");
     });
-};
-var particles = Particles.init({
-    selector: ".background",
-    color: ["#03dac6", "#ff0266", "#000000"],
-    connectParticles: true,
-    responsive: [
-        {
-            breakpoint: 768,
-            options: {
-                color: ["#faebd7", "#03dac6", "#ff0266"],
-                maxParticles: 43,
-                connectParticles: false
-            }
-        }
-    ]
-});
+
+    $('.navbar_top-cancel').click(function () {
+        $(".mobile_menu-wrap").removeClass("mobile_menu-active");
+    });
+})
 
 
 /* ---- particles.js config ---- */
 
-// particlesJS("particles-js", {
-//     "particles": {
-//         "number": {
-//             "value": 380,
-//             "density": {
-//                 "enable": true,
-//                 "value_area": 800
-//             }
-//         },
-//         "color": {
-//             "value": "#567dd9"
-//         },
-//         "shape": {
-//             "type": "circle",
-//             "stroke": {
-//                 "width": 0,
-//                 "color": "#000000"
-//             },
-//             "polygon": {
-//                 "nb_sides": 5
-//             },
-//             "image": {
-//                 "src": "img/github.svg",
-//                 "width": 100,
-//                 "height": 100
-//             }
-//         },
-//         "opacity": {
-//             "value": 0.5,
-//             "random": false,
-//             "anim": {
-//                 "enable": false,
-//                 "speed": 1,
-//                 "opacity_min": 0.1,
-//                 "sync": false
-//             }
-//         },
-//         "size": {
-//             "value": 3,
-//             "random": true,
-//             "anim": {
-//                 "enable": false,
-//                 "speed": 40,
-//                 "size_min": 0.1,
-//                 "sync": false
-//             }
-//         },
-//         "line_linked": {
-//             "enable": true,
-//             "distance": 150,
-//             "color": "#ffffff",
-//             "opacity": 0.4,
-//             "width": 1
-//         },
-//         "move": {
-//             "enable": true,
-//             "speed": 6,
-//             "direction": "none",
-//             "random": false,
-//             "straight": false,
-//             "out_mode": "out",
-//             "bounce": false,
-//             "attract": {
-//                 "enable": false,
-//                 "rotateX": 800,
-//                 "rotateY": 1200
-//             }
-//         }
-//     },
-//     "interactivity": {
-//         "detect_on": "canvas",
-//         "events": {
-//             "onhover": {
-//                 "enable": true,
-//                 "mode": "grab"
-//             },
-//             "onclick": {
-//                 "enable": true,
-//                 "mode": "push"
-//             },
-//             "resize": true
-//         },
-//         "modes": {
-//             "grab": {
-//                 "distance": 140,
-//                 "line_linked": {
-//                     "opacity": 1
-//                 }
-//             },
-//             "bubble": {
-//                 "distance": 400,
-//                 "size": 40,
-//                 "duration": 2,
-//                 "opacity": 8,
-//                 "speed": 3
-//             },
-//             "repulse": {
-//                 "distance": 200,
-//                 "duration": 0.4
-//             },
-//             "push": {
-//                 "particles_nb": 4
-//             },
-//             "remove": {
-//                 "particles_nb": 2
-//             }
-//         }
-//     },
-//     "retina_detect": true
-// });
+particlesJS("particles-js", {
+    "particles": {
+        "number": {
+            "value": 380,
+            "density": {
+                "enable": true,
+                "value_area": 800
+            }
+        },
+        "color": {
+            "value": "#567dd9"
+        },
+        "shape": {
+            "type": "circle",
+            "stroke": {
+                "width": 0,
+                "color": "#000000"
+            },
+            "polygon": {
+                "nb_sides": 5
+            },
+            "image": {
+                "src": "img/github.svg",
+                "width": 100,
+                "height": 100
+            }
+        },
+        "opacity": {
+            "value": 0.5,
+            "random": false,
+            "anim": {
+                "enable": false,
+                "speed": 1,
+                "opacity_min": 0.1,
+                "sync": false
+            }
+        },
+        "size": {
+            "value": 3,
+            "random": true,
+            "anim": {
+                "enable": false,
+                "speed": 40,
+                "size_min": 0.1,
+                "sync": false
+            }
+        },
+        "line_linked": {
+            "enable": true,
+            "distance": 120,
+            "color": "#ffffff",
+            "opacity": 0.4,
+            "width": 1
+        },
+        "move": {
+            "enable": true,
+            "speed": 6,
+            "direction": "none",
+            "random": false,
+            "straight": false,
+            "out_mode": "out",
+            "bounce": false,
+            "attract": {
+                "enable": false,
+                "rotateX": 800,
+                "rotateY": 1200
+            }
+        }
+    },
+    "interactivity": {
+        "detect_on": "canvas",
+        "events": {
+            "onhover": {
+                "enable": true,
+                "mode": "grab"
+            },
+            "onclick": {
+                "enable": true,
+                "mode": "push"
+            },
+            "resize": true
+        },
+        "modes": {
+            "grab": {
+                "distance": 140,
+                "line_linked": {
+                    "opacity": 1
+                }
+            },
+            "bubble": {
+                "distance": 400,
+                "size": 40,
+                "duration": 2,
+                "opacity": 8,
+                "speed": 3
+            },
+            "repulse": {
+                "distance": 200,
+                "duration": 0.4
+            },
+            "push": {
+                "particles_nb": 4
+            },
+            "remove": {
+                "particles_nb": 2
+            }
+        }
+    },
+    "retina_detect": true
+});
 
 
 //

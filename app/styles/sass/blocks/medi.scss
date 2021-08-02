@@ -1,5 +1,94 @@
-@media (max-width: 992px) {
-  .navbar-collapse {
-    display: none;
+@media (max-width: 1400px) {
+  .hero_text-container {
+    left: 260px;
   }
+
+}
+
+@media (max-width: 1200px) {
+  .hero_text-container {
+    left: 180px;
+  }
+
+  .services .swiper_slider .swiper-next {
+    right: -40px !important;
+  }
+  .services .swiper_slider .swiper-prev {
+    left: -40px !important;
+  }
+
+  .reviews .reviews-slider .reviews-swiper .swiper-wrapper .swiper-slide .reviews {
+    background-size: contain;
+  }
+
+  .clients .clients_slider .clients-swiper-next {
+    right: -40px;
+  }
+
+  .clients .clients_slider .clients-swiper-prev {
+    left: -40px;
+  }
+
+}
+
+
+@media (max-width: 992px) {
+  .navbar .navbar-collapse {
+    display: none !important;
+  }
+  .navbar .navbar-brand .logo_text {
+    display: block !important;
+  }
+
+  .navbar .menu_burger {
+    display: block !important;
+  }
+  .hero_text-container {
+    left: 50px;
+  }
+  .hero_text-container .hero_text .hero_text-title {
+    font-size: 32px;
+    margin: 0 0 30px 0;
+  }
+  .hero_text-container .hero_text .hero_text-desc {
+    font-size: 25px;
+  }
+  .services .swiper_slider .swiper-next {
+    right: -30px !important;
+  }
+  .services .swiper_slider .swiper-prev {
+    left: -30px !important;
+  }
+  .reviews .reviews-slider .reviews-swiper .swiper-wrapper .swiper-slide .reviews {
+    background-size: contain !important;
+  }
+  .reviews .reviews-slider .reviews-swiper .swiper-wrapper .swiper-slide .reviews p {
+    font-size: 23px !important;
+    padding: 120px 0 20px 80px !important;
+  }
+  .reviews .reviews-slider .reviews-swiper .swiper-wrapper .swiper-slide .reviews span {
+    font-size: 17px !important;
+    margin-top: 15px !important;
+    padding-left: 80px !important;
+  }
+  .clients .clients_slider .clients-swiper-next {
+    right: -30px;
+  }
+
+  .clients .clients_slider .clients-swiper-prev {
+    left: -30px;
+  }
+  .contact .form-container .input-row input {
+    width: 440px;
+  }
+}
+
+
+@media (max-width: 768px) {
+
+}
+
+
+@media (max-width: 576px) {
+
 }

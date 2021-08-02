@@ -52,14 +52,14 @@
   }
 
   .tab-content {
-    margin: 0 0 140px 0;
+    margin: 0 0 0 0;
 
     .vacancy-grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       grid-column-gap: 20px;
       grid-row-gap: 30px;
-      margin-top: 90px;
+      margin: 90px 0 140px 0;
 
       .vacancy-item {
         background: #FCFCFC;
@@ -159,7 +159,7 @@
     }
 
     //
-    .about-tab {
+    .about-tab, .life-tab, .practicum-tab {
       text-align: center;
       padding: 0 180px 0 180px;
 
@@ -168,7 +168,7 @@
         font-size: 36px;
         line-height: 49px;
         color: #2D9CDB;
-        margin: 0 0 50px 0;
+        margin: 0 0 40px 0;
       }
 
       p {
@@ -233,7 +233,7 @@
     .about-steps {
       display: flex;
       justify-content: space-between;
-      margin-top: 150px;
+      margin: 150px 0 140px 0;
 
       .steps-item {
         flex: 50%;
@@ -309,6 +309,147 @@
         }
       }
 
+    }
+
+    .life {
+      display: flex;
+      margin: 180px 0 180px 0;
+
+      .life-tab-photo {
+        flex: 60%;
+        display: flex;
+        flex-wrap: wrap;
+        position: relative;
+
+        .photo-item {
+          //margin: 0 70px 70px 0;
+
+          img {
+            max-width: 275px;
+            max-height: 185px;
+          }
+
+          &:nth-child(1) {
+            margin-right: 70px;
+          }
+
+          &:nth-child(3) {
+            margin-right: 70px;
+          }
+
+          &:not(:last-child) {
+            margin-bottom: 70px;
+          }
+        }
+
+        .photo-item-center {
+          position: absolute;
+          top: 25%;
+          left: 25%;
+        }
+      }
+
+      .life-tab-text {
+        flex: 40%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+
+        .life-tab-text-row {
+
+
+          h3 {
+            font-weight: bold;
+            font-size: 30px;
+            line-height: 41px;
+            color: #2D9CDB;
+            margin: 0 0 40px 0;
+          }
+
+          p {
+            font-size: 24px;
+            line-height: 33px;
+            color: #212121;
+          }
+        }
+
+
+      }
+    }
+
+    .our-core {
+      background: #162025;
+      padding: 75px 0 65px 0;
+      position: relative;
+
+      .title-row {
+        text-align: center;
+        padding-bottom: 65px;
+
+        h3 {
+          font-weight: bold;
+          font-size: 36px;
+          line-height: 49px;
+          color: #FCFCFC;
+          margin: 0;
+        }
+      }
+
+      .our-core-row {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+        grid-column-gap: 0;
+        grid-row-gap: 50px;
+        z-index: 1;
+
+        .items {
+          padding: 0 90px 0 90px;
+
+          h3 {
+            font-weight: bold;
+            font-size: 30px;
+            line-height: 41px;
+            margin: 0 0 35px;
+            color: #FCFCFC;
+          }
+
+          p {
+            font-size: 24px;
+            line-height: 33px;
+            margin: 0;
+            color: #FCFCFC;
+          }
+        }
+      }
+
+      &:after {
+        content: '';
+        position: absolute;
+        left: -330px;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: #162025;
+        z-index: -1;
+      }
+
+      &:before {
+        content: '';
+        position: absolute;
+        right: -330px;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: #162025;
+        z-index: -1;
+      }
+
+    }
+
+    .practicum-tab{
+      min-height: 500px;
     }
 
   }
