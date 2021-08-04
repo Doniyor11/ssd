@@ -206,6 +206,7 @@ const swiper4 = new Swiper('.p-swiper ', {
     touchRatio: 1,
     touchAngle: 45,
     grabCursor: true,
+    autoHeight: true,
     autoplay: {
         delay: 5000,
     },
