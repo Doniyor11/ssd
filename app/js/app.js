@@ -2,8 +2,8 @@
 import 'bootstrap/dist/js/bootstrap.bundle.min';
 import Swiper from 'swiper/bundle';
 import 'swiper/swiper-bundle.min'
-
-import 'particles.js/particles'
+// import AOS from 'aos';
+// import 'particles.js/particles'
 // import 'particles.js/demo/js/lib/stats'
 import $ from 'jquery'
 
@@ -14,7 +14,6 @@ window.$ = $
 // require('~/app/libs/mmenu/dist/mmenu.js')
 
 document.addEventListener('DOMContentLoaded', () => {
-
 
 })
 
@@ -216,7 +215,6 @@ const swiper4 = new Swiper('.p-swiper ', {
     },
 });
 
-
 const swiper5 = new Swiper('.s-swiper ', {
     direction: 'horizontal',
     slidesPerView: 1,
@@ -234,6 +232,7 @@ const swiper5 = new Swiper('.s-swiper ', {
         clickable: true,
     },
 });
+
 //mobile menu
 $('.menu_burger').click(function () {
     $(".mobile_menu-wrap").toggleClass("mobile_menu-active");
@@ -242,6 +241,8 @@ $('.menu_burger').click(function () {
 $('.navbar_top-cancel').click(function () {
     $(".mobile_menu-wrap").removeClass("mobile_menu-active");
 });
+
+
 
 
 /* ---- particles.js config ---- */
